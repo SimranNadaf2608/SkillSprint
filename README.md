@@ -45,11 +45,10 @@ Given a track, a pace (hours/day) and a duration, `learning/roadmap.py`:
 - Streak tracking (current + longest)
 - Dashboard with today's tasks, upcoming tasks, weak topics, recent quizzes
 - Progress page with skill-completion and quiz-score charts (Recharts)
-- JWT authentication (register/login/refresh), dark mode, responsive layout
 
 ## Tech stack
 
-- **Backend:** Django 5, Django REST Framework, SimpleJWT, django-cors-headers,
+- **Backend:** Django 5, Django REST Framework, django-cors-headers,
   django-filter, SQLite (dev)
 - **Frontend:** React 19, Vite, react-router-dom, axios, Recharts, plain CSS
   (CSS custom properties for theming, incl. dark mode)
@@ -68,7 +67,7 @@ SkillSprint/
 │   └── .env.example
 └── frontend/
     ├── src/
-    │   ├── api/            # axios client + JWT refresh, auth.js, learning.js
+    │   ├── api/            # axios client + Sessions, auth.js, learning.js
     │   ├── context/        # AuthContext, PlanContext
     │   ├── components/     # Navbar, Sidebar, ProgressBar, StatCard, ...
     │   ├── pages/           # Login, Register, Onboarding, Dashboard,
